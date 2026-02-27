@@ -1,0 +1,93 @@
+
+=== EX1.1 - Produits avec prix > 500€ ===
+MacBook Pro 14 - 1799.991€
+Samsung Galaxy Tab S9 Ultra - 1079.991€
+Apple Watch Ultra 2 - 809.991€
+iPhone 15 Pro Max - 1331.991€
+Dell XPS 15 - 1709.991€
+Sony Alpha A7 IV - 2249.991€
+Canon EOS R6 Mark II - 2069.991€
+iPad Pro 12.9 M2 - 1169.991€
+Lenovo ThinkPad X1 Carbon - 1619.991€
+Dell U3223QE - 809.991€
+PlayStation 5 - 549.99€
+LG OLED C3 55" - 1349.991€
+Samsung QN90C 65" - 1619.991€
+Google Pixel 8 Pro - 989.991€
+Samsung Galaxy S24 Ultra - 1223.991€
+
+=== EX1.2 - Produits catégorie 'Computers' avec stock < 15 ===
+Lenovo ThinkPad X1 Carbon - Stock: 12
+
+=== EX1.3 - Utilisateurs créés en 2026 ===
+Chloé Michel - chloe.michel@email.com - Mon Jan 05 2026 09:30:00 GMT+0000 (Coordinated Universal Time)
+Antoine Laurent - antoine.laurent@email.com - Thu Jan 15 2026 14:20:00 GMT+0000 (Coordinated Universal Time)
+Léa Fournier - lea.fournier@email.com - Thu Jan 22 2026 11:00:00 GMT+0000 (Coordinated Universal Time)
+Hugo Girard - hugo.girard@email.com - Wed Jan 28 2026 10:45:00 GMT+0000 (Coordinated Universal Time)
+Camille André - camille.andre@email.com - Sun Feb 01 2026 08:30:00 GMT+0000 (Coordinated Universal Time)
+Maxime Mercier - maxime.mercier@email.com - Thu Feb 05 2026 13:15:00 GMT+0000 (Coordinated Universal Time)
+
+=== EX2.1 - Prix moyen par catégorie ===
+Photography : 2159.99€
+Canon : 2069.99€
+Computers : 1709.99€
+Lenovo : 1619.99€
+TV : 1484.99€
+Dell : 1259.99€
+Mobile : 1181.99€
+Tablets : 1124.99€
+Sony : 1053.32€
+Google : 989.99€
+Electronics : 933.37€
+LG : 922.49€
+Samsung : 898.19€
+Monitors : 652.49€
+Wearables : 598.49€
+Microsoft : 499.99€
+Consoles : 466.66€
+Gaming : 466.66€
+Apple : 405.89€
+Bose : 404.99€
+Nintendo : 349.99€
+Audio : 259.19€
+Sonos : 179.99€
+Storage : 148.49€
+Keyboards : 134.99€
+Logitech : 119.99€
+Western Digital : 116.99€
+Mice : 99.99€
+Accessories : 64.66€
+Chargers : 49.99€
+Cases : 49.99€
+Anker : 34.99€
+Spigen : 29.99€
+Cables : 22.99€
+
+=== EX2.2 - Top 5 produits les plus commandés ===
+Anker USB-C Cable 2m (CABLE-001) - Quantité commandée: 3
+Samsung 990 Pro 2TB (STORAGE-001) - Quantité commandée: 2
+Apple Lightning Cable 1m (CABLE-002) - Quantité commandée: 2
+Sonos One SL (SPEAKER-001) - Quantité commandée: 2
+Magic Mouse (MOUSE-001) - Quantité commandée: 2
+
+=== EX2.3 - Panier moyen ===
+Panier moyen : 1523.66€
+
+=== EX3.1 - Création index sur users.email ===
+Index créé
+
+=== EX3.2 - explain() recherche par email AVEC index ===
+Stage: FETCH
+Index utilisé: "email_1"
+Documents examinés: 1
+Clés examinées: 1
+
+=== EX3.3 - Comparaison avant/après index ===
+--- SANS index (COLLSCAN forcé) ---
+Stage: COLLSCAN
+Documents examinés: 16
+Temps d'exécution: 0ms
+--- AVEC index (IXSCAN) ---
+Stage: IXSCAN
+Documents examinés: 1
+Temps d'exécution: 0ms

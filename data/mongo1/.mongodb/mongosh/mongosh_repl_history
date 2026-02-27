@@ -1,3 +1,39 @@
+db.orders.aggregate([ { $group: { _id: null, panierMoyen: { $avg: { $toDouble: "$total" } } } }] ).forEach((r) => print(`Panier moyen : ${r.panierMoyen.toFixed(2)}€`) )
+)  print(`${p.name} - ${parseFloat(p.price)}€`)db.products.find({ price: { $gt: 500 } }).forEach(p =>
+db.products.find({ "specs.brand": "Apple" }).explain("executionStats")
+db.products.createIndex({ "specs.brand": 1 })
+db.products.find({ "specs.brand": "Apple" }).explain("executionStats")
+db.products.find({ category: "Electronics" }).explain("executionStats")
+db.products.getIndexes()
+db.products.dropIndexes()
+db.products.dropIndex("idx_product_name")
+db.products.getIndexes()
+){ name: "idx_product_name" }{ name: 1 },db.products.createIndex(
+db.users.createIndex({ email: 1 }, { unique: true })
+db.products.createIndex({ category: 1, price: -1 })
+db.products.createIndex({ sku: 1 })
+db.products.deleteMany({ status: "obsolete" })
+db.products.deleteOne({ sku: "PHONE-NEW-001" })
+)}created_at: new Date()stock: 50,price: 99.99,name: "Nouveau produit",sku: "NEW-PRODUCT",{{ sku: "OLD-PRODUCT" },db.products.replaceOne(
+){ $set: { status: "out_of_stock" } }{ stock: 0 },db.products.updateMany(
+){ $mul: { price: 0.9 } }{ category: "Electronics" },db.products.updateMany(
+){ $set: { updated_at: new Date() } }{ sku: "PHONE-NEW-001" },db.products.updateOne(
+){ $inc: { stock: 10 } }{ sku: "PHONE-NEW-001" },db.products.updateOne(
+){ $set: { price: 749.99 } }{ sku: "PHONE-NEW-001" },db.products.updateOne(
+})price: { $lt: 500 }category: "Electronics",db.products.find({
+db.products.find({ category: "Electronics" })
+db.products.find()
+])}created_at: new Date()stock: 100,price: 49.99,category: ["Accessories", "Chargers"],name: "Chargeur rapide 65W",sku: "ACC-002",{},created_at: new Date()stock: 200,price: 19.99,category: ["Accessories"],name: "Câble USB-C",sku: "ACC-001",{db.products.insertMany([
+})created_at: new Date()},storage: "128GB"screen: "6.5 pouces",brand: "TestBrand",specs: {stock: 50,price: 799.99,category: ["Electronics", "Mobile"],name: "Smartphone Test",sku: "PHONE-NEW-001",db.products.insertOne({
+db.products.findOne()
+db.reviews.countDocuments()
+db.orders.countDocuments()
+db.users.countDocuments()
+db.products.countDocuments()
+use nosqlshop
+exit
+< products.json--jsonArray \--collection products \--db nosqlshop \docker exec -i mongo1 mongoimport \
+rs.status().ok
 db.test.find()
 })timestamp: new Date()message: "Hello from Primary!",db.test.insertOne({
 use nosqlshop
