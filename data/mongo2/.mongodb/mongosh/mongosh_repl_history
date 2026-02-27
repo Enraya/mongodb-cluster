@@ -1,0 +1,9 @@
+}))state: m.stateStrname: m.name,rs.status().members.map(m => ({
+db.test.find()
+})timestamp: new Date()message: "Written during failover!",db.test.insertOne({
+use nosqlshop
+}))state: m.stateStrname: m.name,rs.status().members.map(m => ({
+db.test.find()
+db.getMongo().setReadPref("secondary")
+db.test.find()
+use nosqlshop
