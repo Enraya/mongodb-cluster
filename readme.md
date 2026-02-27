@@ -7,7 +7,7 @@
 ## Démarrage
 
 ### 1. Cloner le projet
-git clone https://github.com/VOTRE_USERNAME/mongodb-cluster.git
+git clone https://github.com/Enraya/mongodb-cluster.git
 cd mongodb-cluster
 
 ### 2. Créer les dossiers de données
